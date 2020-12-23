@@ -1,0 +1,358 @@
+
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+    display: block
+}
+:root {
+    --blue: #2196F3;
+    --gray: #757575;
+    --black: #212121;
+    --white: #FFFFFF;
+    --backgrd:#2F303A;
+}
+body {
+    font-family: Roboto, sans-serif;   
+    box-sizing: border-box
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 0;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+h3 {
+    margin: 0;
+}
+
+
+/*----------------Header------------------*/
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+header div {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-in-head {
+    font-family: Raleway,  sans-serif;   
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+}
+nav span {
+    color: var(--blue);
+}
+.main-nav {
+    display: flex;
+    align-items: center
+}
+.domestic-nav a:hover,
+.contact-nav a:hover {
+    color: var(--blue);
+}
+.nav-all {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.domestic-nav {
+    display: flex;
+}
+.domestic-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+.domestic-nav a{
+    padding: 30px 0;
+    color:  var(--black);
+}
+.contact-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-nav li:not(:last-child) {
+    margin-right:  30px;
+}
+.contact-nav a{
+    padding: 30px 0;
+    color: #b1b1b1;
+}
+
+
+/*----------------head------------------*/
+.head { 
+    padding: 200px 0; 
+    margin: 0 auto;
+    max-width: 1600px;
+    max-height: 600px;
+
+    background: var(--backgrd);
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), 
+    url(../images/backgrd-inhead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+.head button {
+    font-family: inherit;
+    color: var(--white);
+    background: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+
+}
+
+
+/*----------------dvantages------------------*/
+.advantages {
+    padding-top: 94px;
+}
+.advantages ul{
+    display: flex;
+}
+.advantages li:not(:last-child){
+    margin-right: 30px;
+}
+.advantages p{
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.advantages h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+
+/*----------------example------------------*/
+.example {
+    padding: 94px 0;
+}
+.example ul{
+    display: flex;
+}
+.example li:not(:last-child){
+    margin-right: 30px;
+}
+
+/*----------------team------------------*/
+.team{
+    padding: 94px 0;
+    display: flex;
+    background-color: #F5F4FA;
+}
+.team ul {
+    display: flex;
+}
+.team li:not(:last-child){
+    margin-right: 30px;
+}
+.team li {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 1px 1px 2px #e0dfdf;
+    border-radius: 4px;
+}
+.team-list div{
+    padding: 30px 10px;
+    text-align: center;
+}
+.name {
+    margin-bottom: 10px;
+
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.duty {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+
+/*----------------footer------------------*/
+.footer {
+    padding: 60px 0;
+    background-color: var(--backgrd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 252px;
+    margin-right: auto;
+}
+.logo-in-footer {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color:  var(--white);
+    
+}
+.logo-in-footer span {
+    color:  var(--blue);
+} 
+.address a {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address a:first-child {
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:  var(--white);
+}
+.address a:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+
+
+/* Портфолио */
+
+.portfolio {
+    padding: 94px 15px;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.filters li:not(:last-child) {
+    margin-right: 8px;
+}
+.filters button {
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+
+    color: var(--black);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.filters button:hover {
+    color:  var(--white);
+    background-color: var(--blue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.list {
+    margin-top: 34px;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.list li {
+    width: 370px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.list li:nth-child(-n+6) {
+    margin-bottom: 30px;
+}
+.list li:not(:nth-child(3n)) {
+    margin-right: 30px;  
+}
+.description {
+    padding: 20px 24px 20px 24px;
+}
+.portfolio-name {
+    margin-bottom: 4px;
+    text-align: left;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:  var(--black);
+    
+}
+.portfolio-type {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: var(--gray);
+}
