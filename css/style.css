@@ -22,6 +22,8 @@ img {
     --black: #212121;
     --white: #FFFFFF;
     --backgrd:#2F303A;
+    --gray2: #F5F4FA;
+    --gray3: #AFB1B8;
 }
 body {
     font-family: Roboto, sans-serif;   
@@ -82,10 +84,6 @@ nav span {
     display: flex;
     align-items: center
 }
-.domestic-nav a:hover,
-.contact-nav a:hover {
-    color: var(--blue);
-}
 .nav-all {
     display: flex;
     justify-content: space-between;
@@ -111,15 +109,31 @@ nav {
 .contact-nav {
     display: flex;
     justify-content: space-between;
+    fill: var(--gray);
 }
 .contact-nav li:not(:last-child) {
     margin-right:  30px;
 }
 .contact-nav a{
     padding: 30px 0;
-    color: #b1b1b1;
+    color: var(--gray);
+    fill: var(--gray);
 }
-
+.svg-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.svg-tell {
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+}
+.domestic-nav a:hover,
+.contact-nav a:hover {
+    color: var(--blue);
+    fill: var(--blue);
+}
 
 /*----------------head------------------*/
 .head { 
@@ -137,7 +151,6 @@ nav {
     url(../images/backgrd-inhead.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 
     text-align: center;
 }
@@ -167,6 +180,28 @@ nav {
 .advantages li:not(:last-child){
     margin-right: 30px;
 }
+.advantages li::before {
+    margin-bottom: 30px;
+    display: block;
+    height: 120px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--gray2);
+}
+.advantages li:nth-child(1)::before {
+    background-image: url(../images/icon/antenna.svg); 
+}
+.advantages li:nth-child(2)::before {
+    background-image: url(../images/icon/clock.svg); 
+}
+.advantages li:nth-child(3)::before {
+    background-image: url(../images/icon/diagram.svg); 
+}
+.advantages li:nth-child(4)::before {
+    background-image: url(../images/icon/astronaut.svg); 
+}
+
 .advantages p{
     color: var(--gray);
     font-size: 14px;
@@ -215,7 +250,7 @@ nav {
     box-shadow: 1px 1px 2px #e0dfdf;
     border-radius: 4px;
 }
-.team-list div{
+.team-list .person{
     padding: 30px 10px;
     text-align: center;
 }
@@ -229,12 +264,71 @@ nav {
     letter-spacing: 0.03em;
 }
 .duty {
+    margin-bottom: 16px;
+
     color: var(--gray);
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
+.links {
+    display: flex;
+    justify-content: center;
+}
+.links a {
+    height: 44px;
+    width: 44px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.links a:not(:last-child) {
+    margin-right: 10px;  
+}
+.links a:hover {
+    background-color: var(--blue);
+}
+.links svg {
+    height: 44px;
+    padding: 12px 12px;
+    fill: var(--gray3);
+}
+.links svg:hover {
+    height: 44px;
+    padding: 12px 12px;
+    fill: var(--white);
+}
 
+/* ---------------clients---------------- */
+.clients {
+    padding: 94px 0;
+}
+.clients ul {
+    display: flex;
+}
+.clients li {
+    width: 170px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray3);
+    border-radius: 4px;
+    fill: var(--gray3);
+}
+.clients li:not(:last-child) {
+    margin-right: 30px;
+}
+.clients svg {
+    width: 60%;
+    height: 60%;
+}
+.clients li:hover {
+    fill: var(--blue);
+    border: 1px solid var(--blue);
+
+}
 
 /*----------------footer------------------*/
 .footer {
@@ -247,6 +341,49 @@ nav {
     height: 252px;
     margin-right: auto;
 }
+.footer-flex {
+    display: flex;
+}
+.join-us {
+    margin-left: 70px;
+    padding-top: 12px;
+}
+.join-us p{
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.links-footer {
+    display: flex;
+}
+.links-footer a {
+    height: 44px;
+    width: 44px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.links-footer a:not(:last-child) {
+    margin-right: 10px;  
+
+}
+.links-footer a:hover {
+    background-color: var(--blue);
+}
+.links-footer svg {
+    height: 44px;
+    padding: 12px 12px;
+    fill: var(--white);
+}
+
 .logo-in-footer {
     font-family: Raleway;
     font-weight: 700;
