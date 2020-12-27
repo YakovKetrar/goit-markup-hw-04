@@ -398,6 +398,11 @@ nav {
 .logo-in-footer span {
     color:  var(--blue);
 } 
+.address {
+    margin-top: 20px;
+
+    font-style: normal;
+}
 .address a {
     display: block;
 
@@ -407,8 +412,6 @@ nav {
     color: rgba(255, 255, 255, 0.6);
 }
 .address a:first-child {
-    margin-top: 20px;
-
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
