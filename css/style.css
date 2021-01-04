@@ -109,30 +109,31 @@ nav {
 .contact-nav {
     display: flex;
     justify-content: space-between;
-    fill: var(--gray);
 }
 .contact-nav li:not(:last-child) {
     margin-right:  30px;
 }
 .contact-nav a{
+    display: flex;
     padding: 30px 0;
+    align-items: center;
     color: var(--gray);
-    fill: var(--gray);
+}
+.domestic-nav a:hover,
+.contact-nav a:hover {
+    color: var(--blue);
 }
 .svg-mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: currentcolor;
 }
 .svg-tell {
     width: 12px;
     height: 16px;
     margin-right: 10px;
-}
-.domestic-nav a:hover,
-.contact-nav a:hover {
-    color: var(--blue);
-    fill: var(--blue);
+    fill: currentcolor;
 }
 
 /*----------------head------------------*/
@@ -312,7 +313,10 @@ nav {
 .clients ul {
     display: flex;
 }
-.clients li {
+.clients li:not(:last-child) {
+    margin-right: 30px;
+}
+.clients a {
     width: 170px;
     height: 90px;
     display: flex;
@@ -320,17 +324,15 @@ nav {
     align-items: center;
     border: 1px solid var(--gray3);
     border-radius: 4px;
-    fill: var(--gray3);
-}
-.clients li:not(:last-child) {
-    margin-right: 30px;
+    color: var(--gray3);
 }
 .clients svg {
     width: 60%;
     height: 60%;
+    fill: currentColor;
 }
-.clients li:hover {
-    fill: var(--blue);
+.clients a:hover {
+    color: var(--blue);
     border: 1px solid var(--blue);
 
 }
@@ -474,7 +476,8 @@ nav {
     width: 370px;
 
 }
-.list li:hover {
+.list-item:hover,
+.list-item:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .list li:nth-child(-n+6) {
